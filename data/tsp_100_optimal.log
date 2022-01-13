@@ -1,0 +1,52 @@
+Gurobi 9.1.2 (mac64[arm]) logging started Mon Jan 10 14:57:17 2022
+
+Changed value of parameter LogFile to tsp.log
+   Prev:   Default: 
+Changed value of parameter LazyConstraints to 1
+   Prev: 0  Min: 0  Max: 1  Default: 0
+Gurobi Optimizer version 9.1.2 build v9.1.2rc0 (mac64[arm])
+Thread count: 8 physical cores, 8 logical processors, using up to 8 threads
+Optimize a model with 100 rows, 4950 columns and 9900 nonzeros
+Model fingerprint: 0x0313d8d5
+Variable types: 0 continuous, 4950 integer (4950 binary)
+Coefficient statistics:
+  Matrix range     [1e+00, 1e+00]
+  Objective range  [1e+00, 1e+02]
+  Bounds range     [1e+00, 1e+00]
+  RHS range        [2e+00, 2e+00]
+Presolve time: 0.00s
+Presolved: 100 rows, 4950 columns, 9900 nonzeros
+Variable types: 0 continuous, 4950 integer (4950 binary)
+
+Root relaxation: objective 7.780982e+02, 144 iterations, 0.00 seconds
+
+    Nodes    |    Current Node    |     Objective Bounds      |     Work
+ Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
+
+     0     0  778.09821    0   22          -  778.09821      -     -    0s
+     0     0  789.44882    0   14          -  789.44882      -     -    0s
+     0     0  790.55756    0   18          -  790.55756      -     -    0s
+     0     0  791.44578    0   20          -  791.44578      -     -    0s
+     0     0  791.44578    0   20          -  791.44578      -     -    0s
+     0     2  799.12705    0   14          -  799.12705      -     -    0s
+* 1345  1214             101     856.7701003  803.53288  6.21%   4.3    0s
+H 1611  1066                     847.9450046  803.62810  5.23%   4.5    0s
+H 1646  1004                     829.6838079  813.74207  1.92%   4.4    0s
+H 1657   962                     824.4134445  820.19170  0.51%   4.5    0s
+
+Cutting planes:
+  Gomory: 10
+  MIR: 1
+  Flow cover: 3
+  Zero half: 6
+  Lazy constraints: 3
+
+Explored 1688 nodes (8621 simplex iterations) in 1.14 seconds
+Thread count was 8 (of 8 available processors)
+
+Solution count 4: 824.413 829.684 847.945 856.77 
+
+Optimal solution found (tolerance 1.00e-04)
+Best objective 8.244134444902e+02, best bound 8.244134444902e+02, gap 0.0000%
+
+User-callback calls 3955, time in user-callback 0.35 sec

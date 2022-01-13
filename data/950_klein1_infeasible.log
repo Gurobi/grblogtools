@@ -1,0 +1,28 @@
+
+Gurobi 9.5.0 (mac64[arm], gurobi_cl) logging started Mon Jan 10 14:51:39 2022
+
+Set parameter LogFile to value "950_klein1_infeasible.log"
+Using license file /Users/vandervelden/gurobi.lic
+
+Gurobi Optimizer version 9.5.0 build v9.5.0rc5 (mac64[arm])
+Copyright (c) 2021, Gurobi Optimization, LLC
+
+Read MPS format model from file klein1.mps
+Reading time = 0.00 seconds
+KLEIN1: 54 rows, 54 columns, 696 nonzeros
+Thread count: 8 physical cores, 8 logical processors, using up to 8 threads
+Optimize a model with 54 rows, 54 columns and 696 nonzeros
+Model fingerprint: 0xa5520c92
+Coefficient statistics:
+  Matrix range     [1e+00, 2e+03]
+  Objective range  [0e+00, 0e+00]
+  Bounds range     [0e+00, 0e+00]
+  RHS range        [8e+00, 5e+01]
+Presolve time: 0.00s
+Presolved: 54 rows, 54 columns, 696 nonzeros
+
+Iteration    Objective       Primal Inf.    Dual Inf.      Time
+       0    0.0000000e+00   1.400000e+02   0.000000e+00      0s
+
+Solved in 116 iterations and 0.00 seconds (0.00 work units)
+Infeasible model

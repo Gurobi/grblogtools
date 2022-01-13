@@ -1,0 +1,58 @@
+
+Gurobi 9.1.2 (mac64[arm]) logging started Mon Jan 10 14:58:18 2022
+
+Changed value of parameter LogFile to tsp.log
+   Prev:   Default: 
+Changed value of parameter LazyConstraints to 1
+   Prev: 0  Min: 0  Max: 1  Default: 0
+Changed value of parameter TimeLimit to 5.0
+   Prev: inf  Min: 0.0  Max: inf  Default: inf
+Gurobi Optimizer version 9.1.2 build v9.1.2rc0 (mac64[arm])
+Thread count: 8 physical cores, 8 logical processors, using up to 8 threads
+Optimize a model with 500 rows, 124750 columns and 249500 nonzeros
+Model fingerprint: 0xa0347fad
+Variable types: 0 continuous, 124750 integer (124750 binary)
+Coefficient statistics:
+  Matrix range     [1e+00, 1e+00]
+  Objective range  [1e+00, 1e+02]
+  Bounds range     [1e+00, 1e+00]
+  RHS range        [2e+00, 2e+00]
+Presolve time: 0.10s
+Presolved: 500 rows, 124750 columns, 249500 nonzeros
+Variable types: 0 continuous, 124750 integer (124750 binary)
+
+Starting sifting (using dual simplex for sub-problems)...
+
+    Iter     Pivots    Primal Obj      Dual Obj        Time
+       0          0     infinity      0.0000000e+00      0s
+
+Sifting complete
+
+
+Root relaxation: objective 1.616131e+03, 780 iterations, 0.02 seconds
+
+    Nodes    |    Current Node    |     Objective Bounds      |     Work
+ Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
+
+     0     0 1616.13138    0   76          - 1616.13138      -     -    0s
+     0     0 1626.80849    0   54          - 1626.80849      -     -    1s
+     0     0 1627.53253    0   48          - 1627.53253      -     -    1s
+     0     0 1629.11256    0   49          - 1629.11256      -     -    1s
+     0     0 1630.18968    0   52          - 1630.18968      -     -    2s
+     0     0 1630.29259    0   65          - 1630.29259      -     -    2s
+     0     0 1630.29259    0   65          - 1630.29259      -     -    2s
+
+Cutting planes:
+  MIR: 5
+  Zero half: 42
+  Lazy constraints: 7
+
+Explored 1 nodes (885 simplex iterations) in 5.00 seconds
+Thread count was 8 (of 8 available processors)
+
+Solution count 0
+
+Time limit reached
+Best objective -, best bound 1.630292589993e+03, gap -
+
+User-callback calls 2369, time in user-callback 1.14 sec
